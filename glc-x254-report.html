@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GLC 300 — колёса</title>
+<style>
+:root{
+  --bg:#f7f7f5;--card:#ffffff;--text:#1d1d1f;--muted:#5f6368;--line:#e3e3e0;
+  --accent:#0b62c4;--ok:#1a7f37;--warn:#9a6700;--bad:#c62828;--chip:#eef3fb;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121314;--card:#1c1d1f;--text:#ececec;--muted:#a0a4a8;--line:#2e3033;
+    --accent:#6aa9ff;--ok:#5cc87a;--warn:#e0b04a;--bad:#ff7a7a;--chip:#1f2a3a;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121314;--card:#1c1d1f;--text:#ececec;--muted:#a0a4a8;--line:#2e3033;
+  --accent:#6aa9ff;--ok:#5cc87a;--warn:#e0b04a;--bad:#ff7a7a;--chip:#1f2a3a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:960px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:1.7rem;margin:0 0 4px}
+h2{font-size:1.25rem;margin:0 0 12px}
+h3{font-size:1.05rem;margin:18px 0 8px}
+.sub{color:var(--muted);margin:0 0 20px}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+nav a{background:var(--chip);color:var(--accent);padding:6px 12px;border-radius:999px;text-decoration:none;font-size:.9rem}
+section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin:0 0 16px}
+a{color:var(--accent)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600;white-space:nowrap}
+code,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.vin{font-size:1.25rem;letter-spacing:.08em;word-break:break-all}
+.tag{display:inline-block;font-size:.78rem;padding:2px 8px;border-radius:999px;border:1px solid currentColor;margin-left:6px;white-space:nowrap}
+.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.note{border-left:3px solid var(--warn);padding:8px 12px;background:color-mix(in srgb,var(--warn) 8%,transparent);border-radius:6px;margin:12px 0}
+.good{border-left:3px solid var(--ok);padding:8px 12px;background:color-mix(in srgb,var(--ok) 8%,transparent);border-radius:6px;margin:12px 0}
+ul,ol{padding-left:20px;margin:8px 0}
+li{margin:4px 0}
+details{border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0}
+summary{cursor:pointer;font-weight:600}
+label.chk{display:flex;gap:10px;align-items:flex-start;padding:6px 0;cursor:pointer}
+label.chk input{margin-top:5px;width:18px;height:18px;flex:none}
+label.chk input:checked + span{color:var(--muted);text-decoration:line-through}
+.toggle{float:right;background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:4px 10px;cursor:pointer}
+footer{color:var(--muted);font-size:.85rem;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<button class="toggle" id="theme" type="button">◐ тема</button>
+<h1>Mercedes-Benz GLC 300 4MATIC (X254)</h1>
+<p class="sub">VIN <span class="mono vin">W1NKJ4HB2SF313496</span><br>Отчёт собран 14.10.2026. Темы: расшифровка VIN, история машины, колёса и план «зима 2026 → лето 2027».</p>
+
+<nav>
+  <a href="#summary">Кратко</a>
+  <a href="#vin">VIN и источники</a>
+  <a href="#history">Отчёт об осмотре</a>
+  <a href="#now">Текущие колёса</a>
+  <a href="#params">Параметры</a>
+  <a href="#stagger">Разноширокие?</a>
+  <a href="#winter">Зима сейчас</a>
+  <a href="#summer">Лето 2027</a>
+  <a href="#todo">Чек-лист</a>
+  <a href="#sources">Источники</a>
+</nav>
+
+<section id="summary">
+<h2>Кратко</h2>
+<ul>
+  <li><b>Машина:</b> Mercedes-Benz GLC 300 4MATIC второго поколения (кузов X254), <b>2025 модельный год</b>. Двигатель 2.0 бензин турбо, около 258 л.с., с мягким гибридом 48 В. Автомат 9G-Tronic, полный привод. Собрана в Бремене (Германия) для корейского рынка.</li>
+  <li><b>Колёса сейчас:</b> Michelin <b>235/55 R19 105W</b> на всех четырёх колёсах. Так комплектуется корейская версия GLC 300 4MATIC Avantgarde.</li>
+  <li><b>Разноширокие колёса не нужны.</b> Заводской вариант для вашей машины — одинаковый размер на обеих осях. Разные размеры спереди и сзади Mercedes ставит только на некоторые 19" и 20" комплектации (AMG Line). Для зимы одинаковый размер лучше.</li>
+  <li><b>Зима сейчас:</b> купить 4 шины <b>235/55 R19, индекс нагрузки 105, XL</b> и поставить на родные диски. Датчики давления уже стоят в дисках, ничего докупать не нужно.</li>
+  <li><b>Весна 2027:</b> проще и дешевле всего купить второй комплект дисков <b>8J×19 ET32,5</b> и поставить на него текущую летнюю резину Michelin, если её ещё можно ездить. К дискам нужны 4 датчика давления.</li>
+</ul>
+</section>
+
+<section id="vin">
+<h2>Расшифровка VIN и откуда взялся 2025 год</h2>
+<p>У машины номер в «североамериканском» формате: в нём зашифрован модельный год и есть контрольная цифра. Такой формат обязателен в США, Канаде и Корее. Европейские Mercedes кодируются иначе (номер вида <span class="mono">W1N254…</span>), и год в них не зашифрован.</p>
+<div class="tbl"><table>
+<tr><th>Позиция</th><th>Символы</th><th>Значение</th><th>Источник</th></tr>
+<tr><td>1–3</td><td class="mono">W1N</td><td>Mercedes-Benz AG, Германия, кроссовер / SUV</td><td><a href="https://en.wikipedia.org/wiki/Vehicle_identification_number#World_manufacturer_identifier" target="_blank" rel="noopener">WMI, Wikipedia</a></td></tr>
+<tr><td>4–8</td><td class="mono">KJ4HB</td><td>GLC 300 4MATIC, X254: 2.0 бензин, 4 цилиндра, полный привод, 9 ступеней</td><td><a href="https://vininspect.com/vin/mercedes-benz/glc-class/2025/w1nkj4hb0sf" target="_blank" rel="noopener">vininspect (тот же префикс)</a>, <a href="https://www.myfloridalegal.com/resale_vehicle/W1NKJ4HB1RF112196" target="_blank" rel="noopener">пример W1NKJ4HB… = GLC 300 4MATIC</a></td></tr>
+<tr><td>9</td><td class="mono">2</td><td>Контрольная цифра. Я пересчитал её по стандартному алгоритму, сумма по модулю 11 равна 2. <span class="tag ok">совпадает</span></td><td><a href="https://www.law.cornell.edu/cfr/text/49/565.15" target="_blank" rel="noopener">49 CFR 565.15</a></td></tr>
+<tr><td>10</td><td class="mono"><b>S</b></td><td><b>Модельный год 2025.</b> 7-й символ — буква (H), поэтому берётся цикл 2010–2039: A=2010 … R=2024, <b>S=2025</b>, T=2026</td><td><a href="https://www.law.cornell.edu/cfr/text/49/565.15" target="_blank" rel="noopener">49 CFR 565.15, таблица кодов года</a>, <a href="https://en.wikipedia.org/wiki/Vehicle_identification_number#Model_year_encoding" target="_blank" rel="noopener">Wikipedia: Model year encoding</a></td></tr>
+<tr><td>11</td><td class="mono">F</td><td>Завод в Бремене</td><td><a href="https://vininspect.com/vin/mercedes-benz/glc-class/2025/w1nkj4hb0sf" target="_blank" rel="noopener">vininspect</a></td></tr>
+<tr><td>12–17</td><td class="mono">313496</td><td>Серийный номер</td><td>—</td></tr>
+</table></div>
+<div class="note"><b>Модельный год — это не дата выпуска.</b> Машина 2025 модельного года могла сойти с конвейера во второй половине 2024 года. Точная дата производства указана на табличке в проёме водительской двери и в заводской карте комплектации (её можно получить у официального дилера по VIN). Проверить расшифровку можно самостоятельно в официальном декодере NHTSA: <a href="https://vpic.nhtsa.dot.gov/decoder/Decoder?VIN=W1NKJ4HB2SF313496" target="_blank" rel="noopener">vpic.nhtsa.dot.gov → ввести VIN</a>.</div>
+</section>
+
+<section id="history">
+<h2>Отчёт об осмотре и история</h2>
+<p class="note">Отчёт об осмотре и истории <b>я получить не смог</b>. Корейские базы требуют авторизацию и корейский госномер, а из среды, где я работаю, они недоступны. Ниже — где отчёт взять и что в нём смотреть.</p>
+<div class="tbl"><table>
+<tr><th>Что</th><th>Где</th><th>Что даёт</th></tr>
+<tr><td><b>Отчёт об осмотре (성능·상태점검기록부)</b></td><td>У продавца или экспортёра. Если машина продавалась на Encar, отчёт прикреплён к объявлению: <a href="https://www.encar.com" target="_blank" rel="noopener">encar.com</a></td><td>Окрасы, замена деталей, кузовные элементы, пробег на дату осмотра, исправность систем</td></tr>
+<tr><td><b>Страховая история (카히스토리)</b></td><td><a href="https://www.carhistory.or.kr" target="_blank" rel="noopener">carhistory.or.kr</a> — база Корейского страхового института (KIDI). Нужен корейский номер</td><td>ДТП и суммы выплат, смены владельцев, затопление, тотал, такси или аренда</td></tr>
+<tr><td><b>Регистрационная история</b></td><td><a href="https://www.car365.go.kr" target="_blank" rel="noopener">car365.go.kr</a> (자동차365, Минтранс Кореи)</td><td>Регистрация, техосмотры, пробег, снятие с учёта для экспорта</td></tr>
+<tr><td><b>Отзывные кампании в Корее</b></td><td><a href="https://www.car.go.kr" target="_blank" rel="noopener">car.go.kr</a> (자동차리콜센터)</td><td>Открытые отзывы по VIN</td></tr>
+<tr><td><b>Сервис и отзывы Mercedes</b></td><td>Официальный дилер Mercedes по VIN</td><td>Заводская комплектация, дата производства, невыполненные отзывные работы, гарантия</td></tr>
+<tr><td><b>После регистрации в РФ</b></td><td><a href="https://xn--90adear.xn--p1ai/check/auto" target="_blank" rel="noopener">Проверка на сайте ГИБДД</a>, <a href="https://autoteka.ru" target="_blank" rel="noopener">Автотека</a></td><td>Ограничения, розыск, ДТП в РФ</td></tr>
+</table></div>
+<div class="good"><b>Важно для колёс:</b> в ЭПТС / СБКТС, по которым машину ввезли и поставили на учёт, перечислены допустимые размеры шин. Перед покупкой летних дисков на 2027 год сверьтесь с этим списком. Размер 235/55 R19 там почти наверняка есть, раз машина пришла на нём.</div>
+</section>
+
+<section id="now">
+<h2>Текущие колёса (по вашему фото)</h2>
+<div class="tbl"><table>
+<tr><th>Маркировка</th><th>Что значит</th></tr>
+<tr><td class="mono">MICHELIN</td><td>Производитель. Модель на фото не видна; вероятно, Primacy, e.Primacy или Pilot Sport с пометкой MO (одобрено Mercedes)</td></tr>
+<tr><td class="mono">235/55 R19</td><td>Ширина 235 мм, высота профиля 55 % от ширины, радиальная, посадочный диаметр 19"</td></tr>
+<tr><td class="mono">105</td><td><b>Индекс нагрузки:</b> до 925 кг на шину. Это <b>не год</b></td></tr>
+<tr><td class="mono">W</td><td><b>Индекс скорости:</b> до 270 км/ч. Тоже <b>не год</b></td></tr>
+</table></div>
+<div class="note"><b>Где смотреть год выпуска шины.</b> Ищите надпись <span class="mono">DOT</span> и в конце кода <b>4 цифры в овальной рамке</b>, например <span class="mono">3824</span> — это 38-я неделя 2024 года. Полный код часто есть только на одной боковине, нередко на внутренней. Посветите фонарём или посмотрите на шиномонтаже, когда колёса будут сняты.</div>
+<p>Диски — оригинальные 19" Mercedes с многоспицевым рисунком. На такой шине они должны быть шириной <b>8J×19</b> (вылет ET около 32,5). Точные данные выбиты на внутренней стороне спицы или у ступицы: номер детали <span class="mono">A254 401 …</span>, а также «8Jx19 H2 ET32.5». Проверьте при переобувке, это пригодится для покупки дисков в 2027 году.</p>
+</section>
+
+<section id="params">
+<h2>Параметры колёс GLC X254: что использовать точно</h2>
+<div class="tbl"><table>
+<tr><th>Параметр</th><th>Значение</th></tr>
+<tr><td>Разболтовка (PCD)</td><td><b>5×112</b></td></tr>
+<tr><td>Центральное отверстие (DIA)</td><td><b>66,6 мм</b>. На неоригинальном диске с большим отверстием нужны центровочные кольца</td></tr>
+<tr><td>Крепёж</td><td>Болты <b>M14×1,5</b>. На оригинальных дисках Mercedes под болт сферическое гнездо, на многих неоригинальных конусное, под них нужны другие болты</td></tr>
+<tr><td>Момент затяжки</td><td><b>150 Н·м</b></td></tr>
+<tr><td>Датчики давления (TPMS)</td><td>Стоят в каждом колесе. Новому комплекту дисков нужны свои 4 датчика (оригинальные Mercedes или совместимые, 433 МГц)</td></tr>
+</table></div>
+
+<h3>Заводские варианты колёс для X254</h3>
+<div class="tbl"><table>
+<tr><th>Вариант</th><th>Перед</th><th>Зад</th><th>Комментарий</th></tr>
+<tr><td>18" одинаковые</td><td>235/60 R18 · 8J×18 ET32,5</td><td>то же</td><td>Базовые версии. Хороший вариант для зимы, но нужны другие диски. Нужно проверить, что тормоза поместятся в 18"</td></tr>
+<tr><td><b>19" одинаковые (ваш)</b></td><td><b>235/55 R19 105 · 8J×19 ET32,5</b></td><td><b>то же</b></td><td><span class="tag ok">стоит сейчас</span> Корейская версия Avantgarde</td></tr>
+<tr><td>19" разноширокие</td><td>235/55 R19 · 8J×19 ET32,5</td><td>255/50 R19 · 9J×19 ET30</td><td>Встречается на части 19" комплектаций</td></tr>
+<tr><td>20" разноширокие</td><td>255/45 R20 · 8,5J×20 ET34,5</td><td>285/40 R20 · 9,5J×20 ET35,5</td><td>AMG Line в США. Дороже, жёстче, колёса нельзя переставлять между осями</td></tr>
+</table></div>
+<p class="sub">Данные с <a href="https://www.wheel-size.com/size/mercedes/glc/x254-2022-2026/" target="_blank" rel="noopener">wheel-size.com</a>, <a href="https://razmerkoles.ru/size/mercedes/glc/x254-2022-2026/" target="_blank" rel="noopener">razmerkoles.ru</a>, <a href="https://koleso.ee/en/valuveljed/mercedes-benz/glc-class/2076/x254-2022-now/4197" target="_blank" rel="noopener">koleso.ee</a>, <a href="https://mosautoshina.ru/auto/mercedes/glc/2022/glc-300-x254/" target="_blank" rel="noopener">mosautoshina.ru</a>, <a href="https://www.sonicautomotive.com/new/Mercedes-Benz/2025-Mercedes-Benz-GLC-300-021bc75dac184b8c041e80df48a1999b.htm" target="_blank" rel="noopener">дилер в США (20" AMG)</a>. Вылет ET в разных базах отличается на 1–2 мм. Допустимый диапазон для 19": ET 30,5–34,5.</p>
+</section>
+
+<section id="stagger">
+<h2>Нужны ли разноширокие диски и шины?</h2>
+<p><b>Нет, не обязательно.</b></p>
+<ul>
+  <li>Ваша машина пришла с завода с <b>одинаковым размером 235/55 R19 на всех колёсах</b>. Это подтверждает и ваше фото, и корейское объявление о GLC 300 4MATIC Avantgarde с шинами 235/55/19 (<a href="https://m.bobaedream.co.kr/cyber/cview/784243" target="_blank" rel="noopener">bobaedream</a>). Значит, это допустимый заводской вариант для 4MATIC.</li>
+  <li>Разноширокие колёса Mercedes ставит на AMG Line и 20" ради внешнего вида и управляемости на сухом асфальте. Для полного привода главное, чтобы <b>наружный диаметр</b> колёс спереди и сзади был одинаковым. На заводских парах так и есть: 255/45 R20 ≈ 737 мм, 285/40 R20 ≈ 736 мм.</li>
+  <li><b>Зимой разноширокие колёса только мешают:</b> широкая резина хуже ведёт себя в снегу и каше, шины дороже, колёса нельзя переставлять между осями. На форумах X253/X254 зимой ставят одинаковые 235/55 R19 или 235/60 R18, например <a href="https://www.drive2.ru/l/640104609561465308/" target="_blank" rel="noopener">drive2: ContiVikingContact 7 235/55 R19 на оригинальных дисках GLC</a>.</li>
+  <li>Разноширокие колёса имеют смысл только на лето и только если хочется 20" «как у AMG». Тогда это <b>отдельный комплект дисков и шин</b>, а текущая летняя резина на него не подойдёт.</li>
+</ul>
+</section>
+
+<section id="winter">
+<h2>Задача 1 — зима сейчас: зимние шины на текущие диски</h2>
+<div class="good"><b>Размер:</b> 4 × <b>235/55 R19</b>, индекс нагрузки <b>105</b> (усиленная, XL). Индекс скорости для зимы допускается ниже летнего (T = 190 км/ч или H = 210 км/ч); в машине по правилам должна быть наклейка с этим ограничением. Брать только шины одной модели и, желательно, одной партии. Пометка «MO» не обязательна.</div>
+<h3>Шипы или липучка</h3>
+<ul>
+  <li><b>Шипы</b> — если много трассы, гололёд, регион без реагентов.</li>
+  <li><b>Липучка</b> — для большого города с чищеными дорогами: тише и не нужно следить за шипами.</li>
+</ul>
+<h3>Варианты, которые обычно выпускаются в 235/55 R19 105 XL (наличие проверить у продавца)</h3>
+<div class="tbl"><table>
+<tr><th>Шипованные</th><th>Липучка</th></tr>
+<tr><td>Nokian Hakkapeliitta 10p SUV / Ikon Autograph Ice 20 SUV</td><td>Nokian Hakkapeliitta R5 SUV / Ikon Autograph Snow 3 SUV</td></tr>
+<tr><td>Michelin X-Ice North 4 SUV</td><td>Michelin X-Ice Snow SUV</td></tr>
+<tr><td>Continental IceContact 3</td><td>Continental VikingContact 7 / 8</td></tr>
+<tr><td>Pirelli Ice Zero 2</td><td>Pirelli Ice Zero FR</td></tr>
+</table></div>
+<p>Где подобрать: <a href="https://www.shinservice.ru/catalog/tyres/automodification-is-mercedes-glc-klasse-x254-suv-2022-2023-x254-suv-400-e-4matic/" target="_blank" rel="noopener">Шинсервис — GLC X254</a> · <a href="https://www.pokrishka.ru/podbor_shiny_avto/mercedes-benz/glc_254_i/" target="_blank" rel="noopener">Покрышка — GLC 254</a> · <a href="https://market.yandex.ru/search?text=%D0%B7%D0%B8%D0%BC%D0%BD%D0%B8%D0%B5%20%D1%88%D0%B8%D0%BD%D1%8B%20235%2F55%20R19%20105%20XL" target="_blank" rel="noopener">Яндекс Маркет: 235/55 R19 105 XL зимние</a> · <a href="https://www.drom.ru/catalog/mercedes-benz/glc-class/specs/razmer-shin/" target="_blank" rel="noopener">Drom: размеры шин GLC</a></p>
+<h3>Что сказать на шиномонтаже</h3>
+<ul>
+  <li>В дисках стоят <b>датчики давления</b>: при снятии и посадке шины с ними нужно аккуратно.</li>
+  <li>Сделать балансировку, затянуть болты <b>моментом 150 Н·м</b>, через 50–100 км проверить затяжку.</li>
+  <li>Летние Michelin сохранить: отметить мелом позицию (ПЛ, ПП, ЗЛ, ЗП) и проверить год по DOT. Хранить без дисков <b>стоя</b>, в тёмном прохладном месте. Весной они пойдут на новые диски.</li>
+  <li>После переобувки сбросить или перезапустить контроль давления в меню машины.</li>
+</ul>
+</section>
+
+<section id="summer">
+<h2>Задача 2 — весна 2027: новые летние диски</h2>
+<h3>Вариант A (рекомендую): 19" одинаковые, текущая летняя резина</h3>
+<ul>
+  <li>4 диска <b>8J×19, 5×112, ET 30,5–34,5 (оптимально 32,5), DIA 66,6</b>.</li>
+  <li>На них ставится текущая летняя Michelin 235/55 R19, если остаток протектора больше 3–4 мм и шине меньше 5–6 лет по DOT.</li>
+  <li>Докупить <b>4 датчика давления</b>. Если диски неоригинальные, нужны болты под них.</li>
+  <li>Самый дешёвый вариант, проблем с ЭПТС не будет. Удобно: «снял-поставил» два одинаковых по размеру комплекта.</li>
+  <li>Оригинальные б/у диски от X254: <a href="https://usedparts.mercedes-benz.com/a/summer-wheel-and-tire-package-alloy-19-inch-with-michelin-tires-for-glc-coupe-254-glc-suv-x254-original-mercedes-amg/a2544010400-vh-za-oxid-2/" target="_blank" rel="noopener">Mercedes Used Parts — 19" X254</a>, <a href="https://www.or24.de/en/mercedes-benz/glc/x254/" target="_blank" rel="noopener">or24.de — X254</a>, <a href="https://www.kunzmann.de/shop/en/tire-wheels/complete-wheels/complete-wheels-summer/summer-wheels-19-inch-glc-x254-hybrid-black-complete-wheel-set-genuine-mercedes-benz.htm" target="_blank" rel="noopener">Kunzmann — 19" X254</a>, а также Авито и Drom по запросу «A254 401 19 оригинал».</li>
+</ul>
+<h3>Вариант B: 20" разноширокие, как AMG Line</h3>
+<ul>
+  <li>Перед: <b>8,5J×20 ET34,5</b> + шины <b>255/45 R20</b> (×2). Зад: <b>9,5J×20 ET35,5</b> + шины <b>285/40 R20</b> (×2).</li>
+  <li>Нужна новая резина, 4 датчика давления, болты. Езда жёстче, диски уязвимы на ямах, колёса нельзя переставлять между осями.</li>
+  <li>Обязательно проверить, есть ли этот размер в ЭПТС / СБКТС. Иначе есть риск претензий при техосмотре и от ГИБДД.</li>
+</ul>
+<div class="note">Если в 2027 году решите брать вариант B, летние Michelin 235/55 R19 можно продать или оставить как запасной комплект на текущих дисках.</div>
+</section>
+
+<section id="todo">
+<h2>Чек-лист</h2>
+<p class="sub">Галочки сохраняются в этом браузере.</p>
+<div id="checks">
+<label class="chk"><input type="checkbox" data-k="c1"><span>Сфотографировать табличку в проёме водительской двери: дата выпуска, давление в шинах, допустимые размеры</span></label>
+<label class="chk"><input type="checkbox" data-k="c2"><span>Найти DOT-код (4 цифры) на текущих Michelin и узнать год выпуска</span></label>
+<label class="chk"><input type="checkbox" data-k="c3"><span>Получить у продавца отчёт об осмотре (성능점검기록부) и выписку carhistory.or.kr</span></label>
+<label class="chk"><input type="checkbox" data-k="c4"><span>Проверить в ЭПТС / СБКТС список разрешённых размеров шин</span></label>
+<label class="chk"><input type="checkbox" data-k="c5"><span>Купить 4 зимние шины 235/55 R19 105 XL (шипы или липучка)</span></label>
+<label class="chk"><input type="checkbox" data-k="c6"><span>Переобуть на текущие диски: аккуратно с датчиками, 150 Н·м, сброс контроля давления</span></label>
+<label class="chk"><input type="checkbox" data-k="c7"><span>Записать маркировку дисков с внутренней стороны (A254…, 8Jx19 ET…)</span></label>
+<label class="chk"><input type="checkbox" data-k="c8"><span>Сохранить летние Michelin до весны: стоя, в темноте, с отметками позиций</span></label>
+<label class="chk"><input type="checkbox" data-k="c9"><span>Весна 2027: купить диски 8J×19 ET32,5 5×112 DIA 66,6 + 4 датчика давления (+ болты для неоригинальных дисков)</span></label>
+<label class="chk"><input type="checkbox" data-k="c10"><span>Выполнить у дилера невыполненные отзывные работы по VIN, если они есть</span></label>
+</div>
+</section>
+
+<section id="sources">
+<h2>Источники</h2>
+<details open><summary>VIN и модельный год</summary><ul>
+<li><a href="https://www.law.cornell.edu/cfr/text/49/565.15" target="_blank" rel="noopener">49 CFR § 565.15 — структура VIN, коды модельного года</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vehicle_identification_number" target="_blank" rel="noopener">Wikipedia — Vehicle identification number</a></li>
+<li><a href="https://vininspect.com/vin/mercedes-benz/glc-class/2025/w1nkj4hb0sf" target="_blank" rel="noopener">vininspect — 2025 GLC, префикс W1NKJ4HB…SF</a></li>
+<li><a href="https://forcar.org/vin-check/W1NKJ4HB4SF375319/" target="_blank" rel="noopener">forcar.org — соседний VIN W1NKJ4HB4SF375319</a></li>
+<li><a href="https://www.myfloridalegal.com/resale_vehicle/W1NKJ4HB1RF112196" target="_blank" rel="noopener">myfloridalegal — W1NKJ4HB1RF112196 (GLC 300 4MATIC)</a></li>
+<li><a href="https://vpic.nhtsa.dot.gov/decoder/" target="_blank" rel="noopener">NHTSA vPIC — официальный декодер VIN</a></li>
+</ul></details>
+<details><summary>Корейская комплектация</summary><ul>
+<li><a href="https://m.bobaedream.co.kr/cyber/cview/784243" target="_blank" rel="noopener">bobaedream — GLC 300 4MATIC Avantgarde 2025, шины 235/55/19</a></li>
+<li><a href="https://tiresize.com/tires/Mercedes-Benz/GLC-300/2025/" target="_blank" rel="noopener">tiresize.com — GLC 300 2025</a></li>
+</ul></details>
+<details><summary>Размеры колёс</summary><ul>
+<li><a href="https://www.wheel-size.com/size/mercedes/glc/x254-2022-2026/" target="_blank" rel="noopener">wheel-size.com — GLC X254</a></li>
+<li><a href="https://razmerkoles.ru/size/mercedes/glc/x254-2022-2026/" target="_blank" rel="noopener">razmerkoles.ru — GLC X254</a></li>
+<li><a href="https://koleso.ee/en/valuveljed/mercedes-benz/glc-class/2076/x254-2022-now/4197" target="_blank" rel="noopener">koleso.ee — X254 (PCD, DIA, болты, момент)</a></li>
+<li><a href="https://avtoreference.com/auto/mercedes-benz/glc/2025/" target="_blank" rel="noopener">avtoreference — GLC 2025</a></li>
+<li><a href="https://mosautoshina.ru/auto/mercedes/glc/2022/glc-300-x254/" target="_blank" rel="noopener">mosautoshina — GLC 300 X254</a></li>
+<li><a href="https://tirepressure.com/2025-mercedes-benz-glc300-tire-pressure" target="_blank" rel="noopener">tirepressure.com — GLC300 2025 (20" AMG)</a></li>
+<li><a href="https://www.sonicautomotive.com/new/Mercedes-Benz/2025-Mercedes-Benz-GLC-300-021bc75dac184b8c041e80df48a1999b.htm" target="_blank" rel="noopener">Дилер в США — 20" AMG 255/45 + 285/40</a></li>
+</ul></details>
+<details><summary>Форумы и зимние комплекты</summary><ul>
+<li><a href="https://www.drive2.ru/l/640104609561465308/" target="_blank" rel="noopener">drive2 — ContiVikingContact 7 235/55 R19 на GLC</a></li>
+<li><a href="https://www.drive2.ru/experience/mercedes/g4884?t=23" target="_blank" rel="noopener">drive2 — колёсные диски GLC, отзывы</a></li>
+<li><a href="https://mbworld.org/forums/glc-class-x253/689634-255-55-r18.html?nojs=1" target="_blank" rel="noopener">MBWorld — 255 слишком широкая для зимы</a></li>
+<li><a href="https://usedparts.mercedes-benz.com/a/winter-wheel-and-tire-package-alloy-19-inch-with-pirelli-tires-for-glc-coupe-253-glc-suv-x253-original-mercedes-amg/a2534011800-vb-zb-oxid-15/" target="_blank" rel="noopener">Mercedes — оригинальный зимний комплект 235/55 R19 (X253)</a></li>
+</ul></details>
+</section>
+
+<footer>Отчёт составлен по открытым источникам. Историю машины по корейским базам получить не удалось. Перед покупкой сверьте размеры с табличкой на двери, маркировкой текущих дисков и ЭПТС.</footer>
+</div>
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('theme');
+  try{var t=localStorage.getItem('theme');if(t)root.setAttribute('data-theme',t);}catch(e){}
+  btn.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    var next=cur==='dark'?'light':'dark';root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+  });
+  document.querySelectorAll('#checks input').forEach(function(cb){
+    try{cb.checked=localStorage.getItem('glc-'+cb.dataset.k)==='1';}catch(e){}
+    cb.addEventListener('change',function(){try{localStorage.setItem('glc-'+cb.dataset.k,cb.checked?'1':'0');}catch(e){}});
+  });
+})();
+</script>
+</body>
+</html>
